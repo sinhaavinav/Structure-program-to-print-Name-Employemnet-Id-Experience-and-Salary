@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+struct employee
+{
+ char name[20];
+ int exp,sal,id;
+}e[10];
+ void main()
+ {
+  int i;
+  clrscr();
+  printf("enter the information of employees :\n");
+  for(i=0;i<5;i++)
+  {
+  printf("\nenter name : ");
+  scanf("%s",e[i].name);
+  printf("\nenter employement id : ");
+  scanf("%d",&e[i].id);
+  printf("\nenter salary : ");
+  scanf("%d",&e[i].sal);
+  printf("\nenter experience : ");
+  scanf("%d",&e[i].exp);
+  }
+  printf("employees details are given below ");
+  for(i=0;i<5;i++)
+  puts(e[i].name);
+  printf("employement id : %d\n" ,e[i].id);
+  printf("salary : %d\n",e[i].sal);
+  printf("experience : %d\n",e[i].exp);
+  getch();
+}
